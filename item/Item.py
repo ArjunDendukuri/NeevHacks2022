@@ -1,4 +1,5 @@
 import JsonParser
+from Rarity import Rarity
 
 
 class Item():
@@ -6,10 +7,13 @@ class Item():
     def __init__(self, name, description, rarity):
         self.name = name
         self.description = description
-        self.rarity = rarity
+        self.rarity = Rarity[rarity]
 
     def __str__(self):
-        return "{}\n=====\n{}\nValue: {}\n".format(self.name, self.description, self.value)
+        file = open(self.get_path(), 'r')
+        ret = file.read()
+        file.close()
+        return ret
 
     def __repr__(self):
         return self.name
