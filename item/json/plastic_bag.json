@@ -2,5 +2,6 @@
     "name":"Plastic Bag",
     "id":"plastic_bag",
     "rarity":"Common",
-    "description":"Plastic, of any kind can take thousands of years to biodegrade, and can be toxic, harming our environment. Plastic bottles are just as harmful and can get inside sea creatures' bodies."
+    "description":"True fishing skill",
+    "effect":""
 }

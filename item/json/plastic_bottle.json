@@ -1,6 +1,7 @@
 {
     "name": "Plastic Bottle",
     "id": "plastic_bottle",
-    "rarity":"common",
-    "description":"This isn't how you refill your water bottle."
+    "rarity":"Common",
+    "description":"This isn't how you refill your water bottle.",
+    "effect": ""
 }

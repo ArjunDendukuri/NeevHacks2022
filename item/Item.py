@@ -1,16 +1,22 @@
-import JsonParser
-from Rarity import Rarity
+from item.Rarity import Rarity
 import random
 
+json_paths = {
+    "can": "item/json/can.json",
+    "plastic_bag":"item/json/plastic_bag.json",
+    "plastic_bottle":"item/json/plastic_bottle.json",
+    "footwear":"item/json/footwear.json",
+    "bottle_cap":"item/json/bottle_cap.json"
+}
 
-class Item():
+class Item():   
 
     def __init__(self, name, description, rarity):
         self.name = name
         self.description = description
         self.rarity = Rarity[rarity]
 
-    def __str__(self):
+    def __str__(self):  
         file = open(self.get_path(), 'r')
         ret = file.read()
         file.close()
@@ -20,7 +26,7 @@ class Item():
         return self.name
 
     def get_path(self): 
-        return JsonParser.json_paths[self.name]
+        return json_paths[self.name]
 
 stats = ["Pollution is one of the biggest global killers, affecting over 100 million people. That's comparable to global diseases like malaria and HIV.",
 "In 1975, the National Academy of Sciences estimated that ocean-based sources, such as cargo ships and cruise liners had dumped 14 billion pounds of garbage into the ocean",

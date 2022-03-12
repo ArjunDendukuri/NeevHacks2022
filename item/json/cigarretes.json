@@ -1,6 +1,7 @@
 {
     "name":"Cigarette",
     "id":"cigarette",
-    "rarity":"common",
-    "description":"Cigarettes are tiny but they are the most common marine pollutants!"
+    "rarity":"Common",
+    "description":"The fish don't need it guys",
+    "effects":"Cigarettes are tiny but they are the most common marine pollutants!"
 }
