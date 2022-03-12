@@ -12,7 +12,13 @@ def tk_run():
     
     root_file = os.path.dirname(__file__)
     
-    sky = PhotoImage(file=root_file+"\\full_clean_ocean.png")
+    seprator = "\\"
+
+    if not os.name == "nt":
+        seprator = "/"
+
+
+    sky = PhotoImage(file=root_file+"{}full_clean_ocean.png".format(seprator))
 
     bt1 = Button(root,bd=1,text="  .  ")
     bt1.place(x=10,y=10)
