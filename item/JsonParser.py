@@ -3,6 +3,7 @@ from item.item import Item
 
 json_paths = {
     "coca_cola_can": "json/coca_cola_can.json",
+    "plastic_bag":"json/plastic_bag.json"
 }
 
 items = []
