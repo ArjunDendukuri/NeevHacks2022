@@ -2,11 +2,11 @@ from item.Rarity import Rarity
 import random
 
 json_paths = {
-    "can": "item/json/can.json",
-    "plastic_bag":"item/json/plastic_bag.json",
-    "plastic_bottle":"item/json/plastic_bottle.json",
-    "footwear":"item/json/footwear.json",
-    "bottle_cap":"item/json/bottle_cap.json"
+    "can": "can.json",
+    "plastic_bag":"plastic_bag.json",
+    "plastic_bottle":"plastic_bottle.json",
+    "footwear":"footwear.json",
+    "bottle_cap":"bottle_cap.json"
 }
 
 class Item():   

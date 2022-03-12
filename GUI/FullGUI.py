@@ -1,4 +1,6 @@
 from tkinter import *
+import os
+
 
 def tk_run():
     root = Tk()
@@ -8,8 +10,10 @@ def tk_run():
 
     itemname = Label(root,text = "lols",font = ("courier new",30))
     itemname.place(x=1000,y=10)
-
-    sky = PhotoImage(file="C:\\Users\\Siddhant Budhia\\OneDrive\\Documents\\GitHub\\NeevHacks2022\\GUI\\full_clean_ocean.png")
+    
+    root_file = os.path.dirname(__file__)
+    
+    sky = PhotoImage(file=root_file+"GUI\\full_clean_ocean.png")
 
     bt1 = Button(root,bd=1,text="  .  ")
     bt1.place(x=10,y=10)
