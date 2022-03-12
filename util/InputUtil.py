@@ -1,4 +1,4 @@
-def get_num(prompt, error):
+def get_num(prompt:str, error:str)-> int:
     while True:
         try:
             num = int(input(prompt))
