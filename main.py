@@ -1,3 +1,6 @@
+from json import load
+import item.JsonParser
+
 def main():
     #make the rendering in this file or another one if you want
     # also pls replace the print text with like on screen stuff
@@ -10,5 +13,5 @@ if __name__ == "__main__":
     main()
 
 def start():
-    # change the screen to the game screen
+    item.JsonParser.load()
     pass
