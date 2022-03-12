@@ -2,5 +2,6 @@
     "name":"Footwear",
     "id":"footwear",
     "rarity":"rare",
-    "description":"Garbage is thrown into water bodies and can be harmful to marine life"
+    "description":"You can't walk on water",
+    "effect":""
 }
