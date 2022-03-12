@@ -1,5 +1,7 @@
-from json import load
-import item.JsonParser
+from item.JsonParser import load_items
+
+def start():
+    load_items()
 
 def main():
     #make the rendering in this file or another one if you want
@@ -12,6 +14,4 @@ def main():
 if __name__ == "__main__":
     main()
 
-def start():
-    item.JsonParser.load()
-    pass
+
