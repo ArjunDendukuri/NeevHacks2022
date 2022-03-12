@@ -1,5 +1,5 @@
 import json
-from item.Item import Item
+from item.item import Item
 
 json_paths = {
     "coca_cola_can": "json/coca_cola_can.json",
