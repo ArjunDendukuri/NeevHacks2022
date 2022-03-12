@@ -3,6 +3,11 @@ import random
 
 json_paths = {
     "can": "can.json",
+    "captain_kidd_coin":"captain_kidd_coin.json",
+    "glass_bottles":"glass_bottles.json",
+    "cigarretes":"cigarretes.json",
+    "wrappers":"wrappers.json",
+    "single_use_cutlery":"single_use_cutlery.json",
     "plastic_bag":"plastic_bag.json",
     "plastic_bottle":"plastic_bottle.json",
     "footwear":"footwear.json",

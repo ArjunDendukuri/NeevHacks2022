@@ -10,17 +10,16 @@ items = []
 
 def parse(file_name):
     scr_name = os.path.dirname(__file__)
-    name = scr_name + "\\" + file_name
+    name = scr_name + "\item\json\\" + file_name
+    print(name)
     try:
         with open(name, 'r') as f:
-            data = json.load(f)
-            raw_data = f.read()
-            json_data = json.load(raw_data)
-            ret = Item(json_data['name'], json_data['description'], json_data['rarity']) 
+            json_data = json.load(f) 
+            ret = Item(json_data['name'], json_data['description'], json_data['rarity']) #error here
             f.close()
             print("Loaded data from",file_name) #temp
             return ret
-    except:
+    except FileNotFoundError:
         return None
 
 
@@ -33,15 +32,13 @@ def load_items():
             print("Error loading item",val)
 
 def start():
-    load_items()
+    pass
 
 def main():
     #make the rendering in this file or another one if you want
     # also pls replace the print text with like on screen stuff
+    load_items()
     tk_run()
-    print("Press enter to start!") # you can replace enter with a butto
-    input("")
-    start()
     
 
 
