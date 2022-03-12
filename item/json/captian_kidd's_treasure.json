@@ -1,6 +1,7 @@
 {
     "name":"Captain Kidd's Treasure",
     "id":"treasure",
-    "rarity":"Epic",
-    "description":"The infamous pirate's treasure is worth $160!"
+    "rarity":"Legendary",
+    "description":"The infamous pirate's treasure is worth $160!",
+    "effect":"Pirates please be careful!"
 }
