@@ -1,7 +1,7 @@
 {
     "name":"Footwear",
     "id":"footwear",
-    "rarity":"rare",
+    "rarity":"Rare",
     "description":"You can't walk on water",
     "effect":""
 }
