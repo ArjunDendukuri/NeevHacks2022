@@ -301,6 +301,8 @@ def tk_run():
     wrapper = PhotoImage(file=root_file + sep +"wrapper.png")
     plastic_bag = PhotoImage(file=root_file + sep +"plastic bag.png")
 
+    footwear_list = []
+
    
     dirt = ["footwear","plastic_bag","coin","bottle_cap","can","cigarette","plastic_bottle","glass_bottle","wrappers"]
     dirt_images = [footwear,plastic_bag,coin,bottle_cap,cigarette,plastic_bottle,glass_bottle]
