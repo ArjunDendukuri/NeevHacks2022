@@ -286,15 +286,15 @@ def tk_run():
     x1 = PhotoImage(file=get_file("full_dirty_puzzle_fixed" ,"1.png"))
    
 
-    footwear = PhotoImage(file="C:\\Users\\Siddhant Budhia\\OneDrive\\Documents\\GitHub\\NeevHacks2022\\GUI\\footwear.png")
-    plastic_bottle = PhotoImage(file="C:\\Users\\Siddhant Budhia\\OneDrive\\Documents\\GitHub\\NeevHacks2022\\GUI\\plastic-bottle.png")
-    coin = PhotoImage(file="C:\\Users\\Siddhant Budhia\\OneDrive\\Documents\\GitHub\\NeevHacks2022\\GUI\\coin.png")
-    bottle_cap=PhotoImage(file="C:\\Users\\Siddhant Budhia\\OneDrive\\Documents\\GitHub\\NeevHacks2022\\GUI\\bottle-cap.png")
-    cigarette = PhotoImage(file="C:\\Users\\Siddhant Budhia\\OneDrive\\Documents\\GitHub\\NeevHacks2022\\GUI\\cigarette.png")
-    wrapper = PhotoImage(file="C:\\Users\\Siddhant Budhia\\OneDrive\\Documents\\GitHub\\NeevHacks2022\\GUI\\cigarette.png")
-    glass_bottle = PhotoImage(file="C:\\Users\\Siddhant Budhia\\OneDrive\\Documents\\GitHub\\NeevHacks2022\\GUI\\glass-bottle.png")
-    wrapper = PhotoImage(file="C:\\Users\\Siddhant Budhia\\OneDrive\\Documents\\GitHub\\NeevHacks2022\\GUI\\cigarette.png")
-    plastic_bag = PhotoImage(file="C:\\Users\\Siddhant Budhia\\OneDrive\\Documents\\GitHub\\NeevHacks2022\\GUI\\plastic bag.png")
+    # foot wear
+    footwear = PhotoImage(file=root_file + sep +"footwear.png")
+    plastic_bottle = PhotoImage(file=root_file +  sep +"plastic-bottle.png")
+    coin = PhotoImage(file=root_file + sep + "coin.png")
+    bottle_cap=PhotoImage(file=root_file + sep +"bottle-cap.png")
+    cigarette = PhotoImage(file=root_file + sep +"cigarette.png")
+    glass_bottle = PhotoImage(file=root_file + sep +"glass-bottle.png")
+    wrapper = PhotoImage(file=root_file + sep +"wrapper.png")
+    plastic_bag = PhotoImage(file=root_file + sep +"plastic bag.png")
 
    
     dirt = ["footwear","plastic_bag","coin","bottle_cap","can","cigarette","plastic_bottle","glass_bottle","wrappers"]
