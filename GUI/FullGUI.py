@@ -7,6 +7,8 @@ def tk_run():
     root.geometry("1920x1080")
     root.iconbitmap('')
 
+#--------------------------------------------------------------------------------------------------------------------------------
+
     y120 = PhotoImage(file="C:\\Users\\Siddhant Budhia\\OneDrive\\Documents\\GitHub\\NeevHacks2022\\GUI\\full_clean_ocean_fixed\\120.png")
     y119 = PhotoImage(file="C:\\Users\\Siddhant Budhia\\OneDrive\\Documents\\GitHub\\NeevHacks2022\\GUI\\full_clean_ocean_fixed\\119.png")
     y118 = PhotoImage(file="C:\\Users\\Siddhant Budhia\\OneDrive\\Documents\\GitHub\\NeevHacks2022\\GUI\\full_clean_ocean_fixed\\118.png")
@@ -268,9 +270,7 @@ def tk_run():
     x2 = PhotoImage(file="C:\\Users\\Siddhant Budhia\\OneDrive\\Documents\\GitHub\\NeevHacks2022\\GUI\\full_dirty_puzzle_fixed\\2.png")
     x1 = PhotoImage(file="C:\\Users\\Siddhant Budhia\\OneDrive\\Documents\\GitHub\\NeevHacks2022\\GUI\\full_dirty_puzzle_fixed\\1.png")
    
-
-   
-   
+   #--------------------------------------------------------------------------------------------------------------------------------
 
     itemname = Label(root,text = "<item name>",font = ("courier new",30))
     itemname.place(x=900,y=10)
@@ -290,7 +290,8 @@ def tk_run():
 
 
     sky = PhotoImage(file=root_file+"{}full_clean_ocean.png".format(seprator))
-    
+
+    #--------------------------------------------------------------------------------------------------------------------------------
 
     bt120 = Button(root,bd=0,image = x120)
     bt120.place(x=10,y=0)
@@ -491,7 +492,7 @@ def tk_run():
     bt26.place(x=660,y=455)
     bt25 = Button(root,bd=0,image = x25)
     bt25.place(x=725,y=455)    
-    #-
+#-
     bt24 = Button(root,bd=0,image = x24)
     bt24.place(x=10,y=520)
     bt23 = Button(root,bd=0,image = x23)
