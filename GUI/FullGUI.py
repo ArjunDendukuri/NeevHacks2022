@@ -1,5 +1,6 @@
 from tkinter import *
 import os
+import random
 
 
 def get_file(folder,pic):
@@ -285,13 +286,25 @@ def tk_run():
     x1 = PhotoImage(file=get_file("full_dirty_puzzle_fixed" ,"1.png"))
    
 
-   
-   
+    footwear = PhotoImage(file="C:\\Users\\Siddhant Budhia\\OneDrive\\Documents\\GitHub\\NeevHacks2022\\GUI\\footwear.png")
+    plastic_bottle = PhotoImage(file="C:\\Users\\Siddhant Budhia\\OneDrive\\Documents\\GitHub\\NeevHacks2022\\GUI\\plastic-bottle.png")
+    coin = PhotoImage(file="C:\\Users\\Siddhant Budhia\\OneDrive\\Documents\\GitHub\\NeevHacks2022\\GUI\\coin.png")
+    bottle_cap=PhotoImage(file="C:\\Users\\Siddhant Budhia\\OneDrive\\Documents\\GitHub\\NeevHacks2022\\GUI\\bottle-cap.png")
+    cigarette = PhotoImage(file="C:\\Users\\Siddhant Budhia\\OneDrive\\Documents\\GitHub\\NeevHacks2022\\GUI\\cigarette.png")
+    wrapper = PhotoImage(file="C:\\Users\\Siddhant Budhia\\OneDrive\\Documents\\GitHub\\NeevHacks2022\\GUI\\cigarette.png")
+    glass_bottle = PhotoImage(file="C:\\Users\\Siddhant Budhia\\OneDrive\\Documents\\GitHub\\NeevHacks2022\\GUI\\glass-bottle.png")
+    wrapper = PhotoImage(file="C:\\Users\\Siddhant Budhia\\OneDrive\\Documents\\GitHub\\NeevHacks2022\\GUI\\cigarette.png")
+    plastic_bag = PhotoImage(file="C:\\Users\\Siddhant Budhia\\OneDrive\\Documents\\GitHub\\NeevHacks2022\\GUI\\plastic bag.png")
 
-    itemname = Label(root,text = "<item name>",font = ("courier new",30))
-    itemname.place(x=900,y=10)
+   
+    dirt = ["footwear","plastic_bag","coin","bottle_cap","can","cigarette","plastic_bottle","glass_bottle","wrappers"]
+    dirt_images = [footwear,plastic_bag,coin,bottle_cap,cigarette,plastic_bottle,glass_bottle]
+    picked_dirt=random.choice(dirt_images)
+   
+    itemname = Label(root,text = str(picked_dirt),font = ("courier new",30))
+    itemname.place(x=875,y=10)
 
-    imagelabel = Label(root, text = "IMAGE WILL GO HERE")
+    imagelabel = Label(root, image=picked_dirt)
     imagelabel.place(x=975,y=60)
 
     raritylabel = Label(root,text = "RARITY WILL GO HERE",font = ("courier new",20))
@@ -299,7 +312,6 @@ def tk_run():
 
     infolabel = Label(root,text = "INFO WILL GO HERE",font = ("courier new",10))
     infolabel.place(x=950, y=275)
-    
     
     sky = PhotoImage(file=root_file+"{}full_clean_ocean.png".format(sep))
     
