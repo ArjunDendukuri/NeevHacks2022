@@ -295,6 +295,12 @@ def tk_run():
     wrapper = PhotoImage(file=root_file + sep +"wrapper.png")
     plastic_bag = PhotoImage(file=root_file + sep +"plastic-bag.png")
     can = PhotoImage(file=root_file + sep +"can.png")
+
+    footwear_pos = [x63, x72, x97, x102, x103]
+    plastic_bottle_pos = [x69, x66, x84, x83, x118, x114]
+    coin_pos = [x120]
+    bottle_cap_pos = [x68, x83, x74, x77, x93, x99, x107, x119, x115]
+    cigarette_pos = [x62, x63, x65, x67, x73, x75, x80, x82, x85, x87, x91, x95, x100, x106, x110, x111, x114]
    
     dirt = ["footwear","plastic_bag","coin","bottle_cap","can","cigarette","plastic_bottle","glass_bottle","wrappers"]
     dirt_images = [footwear,plastic_bag,coin,bottle_cap,cigarette,plastic_bottle,glass_bottle,can,wrapper]
