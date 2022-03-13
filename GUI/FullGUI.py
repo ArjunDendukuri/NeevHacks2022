@@ -1,6 +1,7 @@
 from tkinter import *
 import os
 import random
+from item.Item import json_paths
 
 
 def get_file(folder,pic):
@@ -10,6 +11,10 @@ def get_file(folder,pic):
         sep = "/"
     name = scr_name + sep + folder + sep+ pic
     return name
+
+def json_of(name):
+    return json_paths[name]
+
 
 def tk_run():
     root = Tk()
@@ -299,18 +304,29 @@ def tk_run():
    
     dirt = ["footwear","plastic_bag","coin","bottle_cap","can","cigarette","plastic_bottle","glass_bottle","wrappers"]
     dirt_images = [footwear,plastic_bag,coin,bottle_cap,cigarette,plastic_bottle,glass_bottle]
-    picked_dirt=random.choice(dirt_images)
-   
-    itemname = Label(root,text = str(picked_dirt),font = ("courier new",30))
+    pick_dirt_index = random.randrange(0,dirt_images)
+    picked_dirt=dirt_images[pick_dirt_index]
+    
+    json_dat_file = dirt[pick_dirt_index]
+    
+    parent = os.path.dirname(os.getcwd())
+    os.chdir(parent)
+    json = open(os.getcwd() + sep + "item" + sep + "json" + sep + json_dat_file,'r')
+    
+    json_data = json.read()
+
+    itemname = Label(root,text = json_data["name"],font = ("courier new",30))
     itemname.place(x=875,y=10)
 
     imagelabel = Label(root, image=picked_dirt)
     imagelabel.place(x=975,y=60)
 
-    raritylabel = Label(root,text = "RARITY WILL GO HERE",font = ("courier new",20))
+    raritylabel = Label(root,text = json_data["rarity"],font = ("courier new",20))
     raritylabel.place(x=875, y=200)
 
-    infolabel = Label(root,text = "INFO WILL GO HERE",font = ("courier new",10))
+
+    #make one more for effet
+    infolabel = Label(root,text = json_data["description"],font = ("courier new",10))
     infolabel.place(x=950, y=275)
     
     sky = PhotoImage(file=root_file+"{}full_clean_ocean.png".format(sep))
