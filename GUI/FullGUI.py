@@ -301,7 +301,6 @@ def tk_run():
     coin_pos = [x120]
     bottle_cap_pos = [x68, x83, x74, x77, x93, x99, x107, x119, x115]
     cigarette_pos = [x62, x63, x65, x67, x73, x75, x80, x82, x85, x87, x91, x95, x100, x106, x110, x111, x114]
-   
     wrapper=[x2,x4,x10,x12,x14,x22,x29,x33,x35] 
     can = [x13,x32,x35,x41]
     plastic_bag=[x8,x4,x16,x17,x19,x23,x27,x31,x33,x41,x44,x46,x47,x48,x51]
