@@ -296,6 +296,11 @@ def tk_run():
     plastic_bag = PhotoImage(file=root_file + sep +"plastic-bag.png")
     can = PhotoImage(file=root_file + sep +"can.png")
    
+    wrapper=[x2,x4,x10,x12,x14,x22,x29,x33,x35] 
+    can = [x13,x32,x35,x41]
+    plastic_bag=[x8,x4,x16,x17,x19,x23,x27,x31,x33,x41,x44,x46,x47,x48,x51]
+    glass_bottle=[x16,x27,x38,x60]
+    
     dirt = ["footwear","plastic_bag","coin","bottle_cap","can","cigarette","plastic_bottle","glass_bottle","wrappers"]
     dirt_images = [footwear,plastic_bag,coin,bottle_cap,cigarette,plastic_bottle,glass_bottle,can,wrapper]
     picked_dirt=random.choice(dirt_images)
