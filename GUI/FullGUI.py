@@ -17,7 +17,7 @@ def tk_run():
     root.iconbitmap('')
 
 
-    root = os.path.dirname(__file__)
+    root_file = os.path.dirname(__file__)
     
     sep = "\\"
 
@@ -168,6 +168,7 @@ def tk_run():
     x109 = PhotoImage(file=get_file("full_dirty_puzzle_fixed" ,"109.png"))
     #-
     x108 = PhotoImage(file=get_file("full_dirty_puzzle_fixed" ,"108.png"))
+    x107 = PhotoImage(file=get_file("full_dirty_puzzle_fixed" ,"107.png"))
     x106 = PhotoImage(file=get_file("full_dirty_puzzle_fixed" ,"106.png"))
     x105 = PhotoImage(file=get_file("full_dirty_puzzle_fixed" ,"105.png"))
     x104 = PhotoImage(file=get_file("full_dirty_puzzle_fixed" ,"104.png"))
@@ -300,7 +301,7 @@ def tk_run():
     infolabel.place(x=950, y=275)
     
     
-    sky = PhotoImage(file=root+"{}full_clean_ocean.png".format(sep))
+    sky = PhotoImage(file=root_file+"{}full_clean_ocean.png".format(sep))
     
 
     bt120 = Button(root,bd=0,image = x120)
